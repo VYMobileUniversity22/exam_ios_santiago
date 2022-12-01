@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C34CB132938BB9800DC3604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB122938BB9800DC3604 /* AppDelegate.swift */; };
 		0C34CB152938BB9800DC3604 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB142938BB9800DC3604 /* SceneDelegate.swift */; };
-		0C34CB172938BB9800DC3604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB162938BB9800DC3604 /* ViewController.swift */; };
-		0C34CB1A2938BB9800DC3604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB182938BB9800DC3604 /* Main.storyboard */; };
 		0C34CB1C2938BB9800DC3604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB1B2938BB9800DC3604 /* Assets.xcassets */; };
 		0C34CB1F2938BB9800DC3604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */; };
 		0C34CB2A2938BB9900DC3604 /* StartWarsPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB292938BB9900DC3604 /* StartWarsPeopleTests.swift */; };
@@ -39,8 +37,6 @@
 		0C34CB0F2938BB9800DC3604 /* StartWarsPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartWarsPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C34CB122938BB9800DC3604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C34CB142938BB9800DC3604 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C34CB162938BB9800DC3604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C34CB192938BB9800DC3604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C34CB1B2938BB9800DC3604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C34CB1E2938BB9800DC3604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C34CB202938BB9800DC3604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +95,7 @@
 		0C34CB112938BB9800DC3604 /* StartWarsPeople */ = {
 			isa = PBXGroup;
 			children = (
-				0C34CB122938BB9800DC3604 /* AppDelegate.swift */,
-				0C34CB142938BB9800DC3604 /* SceneDelegate.swift */,
-				0C34CB162938BB9800DC3604 /* ViewController.swift */,
-				0C34CB182938BB9800DC3604 /* Main.storyboard */,
+				0C34CB422938BC1F00DC3604 /* App */,
 				0C34CB1B2938BB9800DC3604 /* Assets.xcassets */,
 				0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */,
 				0C34CB202938BB9800DC3604 /* Info.plist */,
@@ -125,6 +118,15 @@
 				0C34CB352938BB9900DC3604 /* StartWarsPeopleUITestsLaunchTests.swift */,
 			);
 			path = StartWarsPeopleUITests;
+			sourceTree = "<group>";
+		};
+		0C34CB422938BC1F00DC3604 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB142938BB9800DC3604 /* SceneDelegate.swift */,
+				0C34CB122938BB9800DC3604 /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +235,6 @@
 			files = (
 				0C34CB1F2938BB9800DC3604 /* LaunchScreen.storyboard in Resources */,
 				0C34CB1C2938BB9800DC3604 /* Assets.xcassets in Resources */,
-				0C34CB1A2938BB9800DC3604 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C34CB172938BB9800DC3604 /* ViewController.swift in Sources */,
 				0C34CB132938BB9800DC3604 /* AppDelegate.swift in Sources */,
 				0C34CB152938BB9800DC3604 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0C34CB182938BB9800DC3604 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C34CB192938BB9800DC3604 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
