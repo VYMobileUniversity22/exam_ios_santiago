@@ -14,6 +14,26 @@
 		0C34CB2A2938BB9900DC3604 /* StartWarsPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB292938BB9900DC3604 /* StartWarsPeopleTests.swift */; };
 		0C34CB342938BB9900DC3604 /* StartWarsPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB332938BB9900DC3604 /* StartWarsPeopleUITests.swift */; };
 		0C34CB362938BB9900DC3604 /* StartWarsPeopleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB352938BB9900DC3604 /* StartWarsPeopleUITestsLaunchTests.swift */; };
+		0C34CB4C2938BD2900DC3604 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB4B2938BD2900DC3604 /* AppCoordinator.swift */; };
+		0C34CB4E2938BD3000DC3604 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB4D2938BD3000DC3604 /* Coordinator.swift */; };
+		0C34CB502938BD4600DC3604 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB4F2938BD4600DC3604 /* ApiManager.swift */; };
+		0C34CB522938BD5000DC3604 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB512938BD5000DC3604 /* StorageManager.swift */; };
+		0C34CB542938BD6A00DC3604 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB532938BD6A00DC3604 /* BaseProtocol.swift */; };
+		0C34CB562938BD8200DC3604 /* CallsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB552938BD8200DC3604 /* CallsConstants.swift */; };
+		0C34CB5A2938BDA800DC3604 /* PeoplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB592938BDA800DC3604 /* PeoplesViewController.swift */; };
+		0C34CB5C2938BDB000DC3604 /* PeoplesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB5B2938BDB000DC3604 /* PeoplesPresenter.swift */; };
+		0C34CB5E2938BDC500DC3604 /* PeoplesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB5D2938BDC500DC3604 /* PeoplesInteractor.swift */; };
+		0C34CB602938BDD500DC3604 /* PeoplesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB5F2938BDD500DC3604 /* PeoplesService.swift */; };
+		0C34CB622938BDE000DC3604 /* PeoplesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB612938BDE000DC3604 /* PeoplesCoordinator.swift */; };
+		0C34CB642938BDEC00DC3604 /* PeoplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB632938BDEC00DC3604 /* PeoplesViewController.xib */; };
+		0C34CB662938BDF800DC3604 /* PeoplesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB652938BDF800DC3604 /* PeoplesContract.swift */; };
+		0C34CB6D2938BE4200DC3604 /* Peoples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB6C2938BE4200DC3604 /* Peoples.swift */; };
+		0C34CB6F2938BE6E00DC3604 /* PeoplesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB6E2938BE6E00DC3604 /* PeoplesResponse.swift */; };
+		0C34CB712938BF6B00DC3604 /* PeoplesServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB702938BF6B00DC3604 /* PeoplesServiceContract.swift */; };
+		0C34CB732938BFC600DC3604 /* PeoplesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB722938BFC600DC3604 /* PeoplesApi.swift */; };
+		0C34CB762938C09500DC3604 /* PeoplesResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB752938C09500DC3604 /* PeoplesResponseApi.swift */; };
+		0C34CB782938C27B00DC3604 /* CustomErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB772938C27B00DC3604 /* CustomErrorProtocol.swift */; };
+		0C34CB7A2938C28300DC3604 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB792938C28300DC3604 /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,26 @@
 		0C34CB2F2938BB9900DC3604 /* StartWarsPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartWarsPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C34CB332938BB9900DC3604 /* StartWarsPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWarsPeopleUITests.swift; sourceTree = "<group>"; };
 		0C34CB352938BB9900DC3604 /* StartWarsPeopleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWarsPeopleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C34CB4B2938BD2900DC3604 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0C34CB4D2938BD3000DC3604 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0C34CB4F2938BD4600DC3604 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		0C34CB512938BD5000DC3604 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		0C34CB532938BD6A00DC3604 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		0C34CB552938BD8200DC3604 /* CallsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsConstants.swift; sourceTree = "<group>"; };
+		0C34CB592938BDA800DC3604 /* PeoplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesViewController.swift; sourceTree = "<group>"; };
+		0C34CB5B2938BDB000DC3604 /* PeoplesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesPresenter.swift; sourceTree = "<group>"; };
+		0C34CB5D2938BDC500DC3604 /* PeoplesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesInteractor.swift; sourceTree = "<group>"; };
+		0C34CB5F2938BDD500DC3604 /* PeoplesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesService.swift; sourceTree = "<group>"; };
+		0C34CB612938BDE000DC3604 /* PeoplesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesCoordinator.swift; sourceTree = "<group>"; };
+		0C34CB632938BDEC00DC3604 /* PeoplesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeoplesViewController.xib; sourceTree = "<group>"; };
+		0C34CB652938BDF800DC3604 /* PeoplesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesContract.swift; sourceTree = "<group>"; };
+		0C34CB6C2938BE4200DC3604 /* Peoples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peoples.swift; sourceTree = "<group>"; };
+		0C34CB6E2938BE6E00DC3604 /* PeoplesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesResponse.swift; sourceTree = "<group>"; };
+		0C34CB702938BF6B00DC3604 /* PeoplesServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceContract.swift; sourceTree = "<group>"; };
+		0C34CB722938BFC600DC3604 /* PeoplesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesApi.swift; sourceTree = "<group>"; };
+		0C34CB752938C09500DC3604 /* PeoplesResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesResponseApi.swift; sourceTree = "<group>"; };
+		0C34CB772938C27B00DC3604 /* CustomErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorProtocol.swift; sourceTree = "<group>"; };
+		0C34CB792938C28300DC3604 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +135,7 @@
 		0C34CB112938BB9800DC3604 /* StartWarsPeople */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CB432938BCF000DC3604 /* Class */,
 				0C34CB422938BC1F00DC3604 /* App */,
 				0C34CB1B2938BB9800DC3604 /* Assets.xcassets */,
 				0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */,
@@ -123,10 +164,157 @@
 		0C34CB422938BC1F00DC3604 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CB4A2938BD1D00DC3604 /* Coordinator */,
 				0C34CB142938BB9800DC3604 /* SceneDelegate.swift */,
 				0C34CB122938BB9800DC3604 /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0C34CB432938BCF000DC3604 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB492938BD1300DC3604 /* Domain */,
+				0C34CB482938BD0D00DC3604 /* Api */,
+				0C34CB472938BD0700DC3604 /* Screen */,
+				0C34CB462938BD0100DC3604 /* Constants */,
+				0C34CB452938BCFD00DC3604 /* Bases */,
+				0C34CB442938BCF800DC3604 /* Manager */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0C34CB442938BCF800DC3604 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB4F2938BD4600DC3604 /* ApiManager.swift */,
+				0C34CB512938BD5000DC3604 /* StorageManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0C34CB452938BCFD00DC3604 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB532938BD6A00DC3604 /* BaseProtocol.swift */,
+				0C34CB772938C27B00DC3604 /* CustomErrorProtocol.swift */,
+				0C34CB792938C28300DC3604 /* CustomAlert.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		0C34CB462938BD0100DC3604 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB552938BD8200DC3604 /* CallsConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0C34CB472938BD0700DC3604 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB572938BD8D00DC3604 /* Peoples */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		0C34CB482938BD0D00DC3604 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB682938BE0900DC3604 /* Service */,
+				0C34CB672938BE0300DC3604 /* Model */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0C34CB492938BD1300DC3604 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB6A2938BE1700DC3604 /* Service */,
+				0C34CB692938BE1300DC3604 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0C34CB4A2938BD1D00DC3604 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB4B2938BD2900DC3604 /* AppCoordinator.swift */,
+				0C34CB4D2938BD3000DC3604 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0C34CB572938BD8D00DC3604 /* Peoples */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB582938BD9900DC3604 /* CellsPeoples */,
+				0C34CB592938BDA800DC3604 /* PeoplesViewController.swift */,
+				0C34CB5B2938BDB000DC3604 /* PeoplesPresenter.swift */,
+				0C34CB5D2938BDC500DC3604 /* PeoplesInteractor.swift */,
+				0C34CB5F2938BDD500DC3604 /* PeoplesService.swift */,
+				0C34CB612938BDE000DC3604 /* PeoplesCoordinator.swift */,
+				0C34CB632938BDEC00DC3604 /* PeoplesViewController.xib */,
+				0C34CB652938BDF800DC3604 /* PeoplesContract.swift */,
+			);
+			path = Peoples;
+			sourceTree = "<group>";
+		};
+		0C34CB582938BD9900DC3604 /* CellsPeoples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CellsPeoples;
+			sourceTree = "<group>";
+		};
+		0C34CB672938BE0300DC3604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB742938C08200DC3604 /* ResponseApi */,
+				0C34CB722938BFC600DC3604 /* PeoplesApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C34CB682938BE0900DC3604 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C34CB692938BE1300DC3604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB6B2938BE2900DC3604 /* Response */,
+				0C34CB6C2938BE4200DC3604 /* Peoples.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C34CB6A2938BE1700DC3604 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB702938BF6B00DC3604 /* PeoplesServiceContract.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C34CB6B2938BE2900DC3604 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB6E2938BE6E00DC3604 /* PeoplesResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		0C34CB742938C08200DC3604 /* ResponseApi */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB752938C09500DC3604 /* PeoplesResponseApi.swift */,
+			);
+			path = ResponseApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C34CB642938BDEC00DC3604 /* PeoplesViewController.xib in Resources */,
 				0C34CB1F2938BB9800DC3604 /* LaunchScreen.storyboard in Resources */,
 				0C34CB1C2938BB9800DC3604 /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +448,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C34CB4E2938BD3000DC3604 /* Coordinator.swift in Sources */,
+				0C34CB4C2938BD2900DC3604 /* AppCoordinator.swift in Sources */,
+				0C34CB762938C09500DC3604 /* PeoplesResponseApi.swift in Sources */,
+				0C34CB502938BD4600DC3604 /* ApiManager.swift in Sources */,
+				0C34CB562938BD8200DC3604 /* CallsConstants.swift in Sources */,
+				0C34CB522938BD5000DC3604 /* StorageManager.swift in Sources */,
+				0C34CB7A2938C28300DC3604 /* CustomAlert.swift in Sources */,
+				0C34CB5C2938BDB000DC3604 /* PeoplesPresenter.swift in Sources */,
+				0C34CB5A2938BDA800DC3604 /* PeoplesViewController.swift in Sources */,
+				0C34CB6F2938BE6E00DC3604 /* PeoplesResponse.swift in Sources */,
 				0C34CB132938BB9800DC3604 /* AppDelegate.swift in Sources */,
+				0C34CB662938BDF800DC3604 /* PeoplesContract.swift in Sources */,
+				0C34CB622938BDE000DC3604 /* PeoplesCoordinator.swift in Sources */,
+				0C34CB712938BF6B00DC3604 /* PeoplesServiceContract.swift in Sources */,
+				0C34CB602938BDD500DC3604 /* PeoplesService.swift in Sources */,
+				0C34CB732938BFC600DC3604 /* PeoplesApi.swift in Sources */,
+				0C34CB782938C27B00DC3604 /* CustomErrorProtocol.swift in Sources */,
+				0C34CB5E2938BDC500DC3604 /* PeoplesInteractor.swift in Sources */,
 				0C34CB152938BB9800DC3604 /* SceneDelegate.swift in Sources */,
+				0C34CB6D2938BE4200DC3604 /* Peoples.swift in Sources */,
+				0C34CB542938BD6A00DC3604 /* BaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
