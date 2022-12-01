@@ -11,6 +11,7 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
     var interactor: PeoplesInteractorProtocol
     var url = CallsConstants.peoplesUrl
     var peoples = [PeoplesSW]()
+    var hasNextPage = true
     
     init( interactor: PeoplesInteractorProtocol) {
         self.interactor = interactor

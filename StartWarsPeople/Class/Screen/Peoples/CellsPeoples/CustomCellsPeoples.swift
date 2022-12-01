@@ -12,6 +12,7 @@ class CustomCellsPeoples: UICollectionViewCell{
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var birthYearLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

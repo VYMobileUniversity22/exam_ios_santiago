@@ -38,6 +38,7 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
             return CustomCellsPeoples()
         }
         cell.nameLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).name
+        cell.birthYearLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).birthYear
         
         return cell
     }
