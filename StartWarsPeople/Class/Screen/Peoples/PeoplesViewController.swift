@@ -49,6 +49,15 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
         }
         delegate?.goToDetailScreen(sender: self)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let numberRowForCell = presenter?.getPeoplesCount() else {return}
+        if presenter?.getNextPage() == true {
+            if indexPath.row == (numberRowForCell - 5){
+                presenter?.getPeoples()
+            }
+        }
+    }
 }
 
 extension PeoplesViewController: PeoplesViewProtocol{
@@ -60,7 +69,8 @@ extension PeoplesViewController: PeoplesViewProtocol{
     
     func showError(message: String) {
         DispatchQueue.main.async {
-            ShowAlert().showAlertView(message: message, parent: self)
+            ShowAlert().showAlertView(message: message,
+                                      parent: self)
         }
     }
     
