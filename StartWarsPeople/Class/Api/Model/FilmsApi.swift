@@ -10,7 +10,7 @@ struct FilmsApi: FilmsSW, Codable{
     var title: String
     
     var director: String
-    
+
     var releaseDate: String
     
     enum CodingKeys: String, CodingKey{

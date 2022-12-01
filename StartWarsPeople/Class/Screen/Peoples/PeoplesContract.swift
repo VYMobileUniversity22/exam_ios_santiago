@@ -31,5 +31,5 @@ protocol PeoplesServiceProtocol {
 }
 
 protocol PeoplesCoordinatorDelegate {
-    func goToDetailScreen(sender: UIViewController)
+    func goToDetailScreen(people: PeoplesSW, sender: UIViewController)
 }

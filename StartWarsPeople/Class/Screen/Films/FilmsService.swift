@@ -6,3 +6,14 @@
 //
 
 import Foundation
+internal final class FilmsService: FilmsServiceProtocol {
+    private let filmsService: FilmsServiceContract
+
+    init(filmsService: FilmsServiceContract = FilmsServiceApi()) {
+        self.filmsService = filmsService
+    }
+
+    func getFilmsService() -> FilmsServiceContract {
+        return filmsService
+    }
+}

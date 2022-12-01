@@ -47,7 +47,7 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
         guard let people = presenter?.peoplesAtIndex(index: indexPath.row) else {
             return
         }
-        delegate?.goToDetailScreen(sender: self)
+        delegate?.goToDetailScreen(people: people, sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

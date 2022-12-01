@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 class PeoplesCoordinator: PeoplesCoordinatorDelegate {
-    func goToDetailScreen(sender: UIViewController) {
-        let interactor = PeoplesInteractor()
-        let presenter = PeoplesPresenter(interactor: interactor)
-        let view = PeoplesViewController(presenter: presenter)
+    func goToDetailScreen(people: PeoplesSW, sender: UIViewController) {
+        let interactor = FilmsInteractor(people: people)
+        let presenter = FilmsPresenter(interactor: interactor)
+        let view = FilmsViewController(presenter: presenter)
 
         presenter.view = view
 

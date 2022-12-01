@@ -14,11 +14,11 @@ public class FilmsServiceApi: FilmsServiceContract {
         self.apiManager = apiManager
     }
 
-    func getFilmsResult(url: String, completion: @escaping (Result<FilmsResponse, Error>) -> Void) {
-        apiManager.apiCall(for: url) { (result: Result<FilmsResponseApi, Error>) in
+    func getFilmsResult(url: String, completion: @escaping (Result<FilmsSW, Error>) -> Void) {
+        apiManager.apiCall(for: url) { (result: Result<FilmsApi, Error>) in
             switch result {
-            case let .success(peoples):
-                completion(.success(peoples))
+            case let .success(films):
+                completion(.success(films))
             case let .failure(error):
                 completion(.failure(error))
             }

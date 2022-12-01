@@ -50,6 +50,8 @@
 		0C34CB9E2938D9B300DC3604 /* FilmsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB9D2938D9B300DC3604 /* FilmsApi.swift */; };
 		0C34CBA02938DAF000DC3604 /* FilmsServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB9F2938DAF000DC3604 /* FilmsServiceApi.swift */; };
 		0C34CBA22938DB0A00DC3604 /* FilmsResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBA12938DB0A00DC3604 /* FilmsResponseApi.swift */; };
+		0C34CBA42938F66D00DC3604 /* CustomCellsFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBA32938F66D00DC3604 /* CustomCellsFilms.swift */; };
+		0C34CBA62938F67B00DC3604 /* CellsFilms.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CBA52938F67B00DC3604 /* CellsFilms.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		0C34CB9D2938D9B300DC3604 /* FilmsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsApi.swift; sourceTree = "<group>"; };
 		0C34CB9F2938DAF000DC3604 /* FilmsServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceApi.swift; sourceTree = "<group>"; };
 		0C34CBA12938DB0A00DC3604 /* FilmsResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponseApi.swift; sourceTree = "<group>"; };
+		0C34CBA32938F66D00DC3604 /* CustomCellsFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellsFilms.swift; sourceTree = "<group>"; };
+		0C34CBA52938F67B00DC3604 /* CellsFilms.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellsFilms.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +381,8 @@
 		0C34CB842938D76700DC3604 /* CellsFilms */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CBA32938F66D00DC3604 /* CustomCellsFilms.swift */,
+				0C34CBA52938F67B00DC3604 /* CellsFilms.xib */,
 			);
 			path = CellsFilms;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 				0C34CB942938D7D800DC3604 /* FilmsViewController.xib in Resources */,
 				0C34CB822938C8CE00DC3604 /* CellsPeoples.xib in Resources */,
 				0C34CB642938BDEC00DC3604 /* PeoplesViewController.xib in Resources */,
+				0C34CBA62938F67B00DC3604 /* CellsFilms.xib in Resources */,
 				0C34CB1F2938BB9800DC3604 /* LaunchScreen.storyboard in Resources */,
 				0C34CB1C2938BB9800DC3604 /* Assets.xcassets in Resources */,
 			);
@@ -520,6 +527,7 @@
 				0C34CB4C2938BD2900DC3604 /* AppCoordinator.swift in Sources */,
 				0C34CB882938D78700DC3604 /* FilmsViewController.swift in Sources */,
 				0C34CB762938C09500DC3604 /* PeoplesResponseApi.swift in Sources */,
+				0C34CBA42938F66D00DC3604 /* CustomCellsFilms.swift in Sources */,
 				0C34CB502938BD4600DC3604 /* ApiManager.swift in Sources */,
 				0C34CB9A2938D90600DC3604 /* FilmsResponse.swift in Sources */,
 				0C34CB562938BD8200DC3604 /* CallsConstants.swift in Sources */,

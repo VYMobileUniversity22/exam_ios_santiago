@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="201" id="nqH-0u-WjG" customClass="CustomCellsFilms" customModule="StartWarsPeople" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nqH-0u-WjG" id="2zc-Pn-Rdp">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="ADn-x6-TTg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="201"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-tQ-r2G">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLO-Fh-SaO">
+                                <rect key="frame" x="0.0" y="90.333333333333329" width="393" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8J-th-Y8l">
+                                <rect key="frame" x="0.0" y="180.66666666666666" width="393" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ADn-x6-TTg" firstAttribute="top" secondItem="2zc-Pn-Rdp" secondAttribute="top" id="2Yd-zS-nxa"/>
+                    <constraint firstAttribute="trailing" secondItem="ADn-x6-TTg" secondAttribute="trailing" id="7kE-gy-Q6x"/>
+                    <constraint firstItem="ADn-x6-TTg" firstAttribute="leading" secondItem="2zc-Pn-Rdp" secondAttribute="leading" id="cd5-Yc-RUW"/>
+                    <constraint firstAttribute="bottom" secondItem="ADn-x6-TTg" secondAttribute="bottom" id="dPn-1X-81k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="directorLabelFilms" destination="qLO-Fh-SaO" id="lqx-I3-uGo"/>
+                <outlet property="releaseDateLabelFilms" destination="j8J-th-Y8l" id="YOW-4U-8j3"/>
+                <outlet property="titleLabelFilms" destination="PU7-tQ-r2G" id="fvf-0m-ChQ"/>
+            </connections>
+            <point key="canvasLocation" x="229.7709923664122" y="-38.380281690140848"/>
+        </tableViewCell>
+    </objects>
+</document>

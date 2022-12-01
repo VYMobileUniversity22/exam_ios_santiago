@@ -7,5 +7,5 @@
 
 import Foundation
 protocol FilmsServiceContract {
-    func getFilmsResult(url: String, completion: @escaping (Result<FilmsResponse, Error>) -> Void)
+    func getFilmsResult(url: String, completion: @escaping (Result<FilmsSW, Error>) -> Void)
 }
