@@ -20,17 +20,22 @@ internal final class FilmsPresenter{
 }
 extension FilmsPresenter: FilmsPresenterProtocol{
     func getFilms() {
+        view?.loadIndicator(indicatorBool: true)
         self.people = interactor.getFilms().films
         
         for character in people{
             interactor.getFilmsResult(url: character) {
                 result in
                 switch result {
-                case.failure(let error):
-                    self.view?.showError(message: error.localizedDescription)
+                case.failure(_):
+                    self.view?.showError(message: "No hay internet, intentelo mas tarde")
+                    self.view?.loadIndicator(indicatorBool: false)
+
                 case.success(let film):
                     self.films.append(film)
                     self.view?.loadFilms()
+                    self.view?.loadIndicator(indicatorBool: false)
+
                 }
             }
         }

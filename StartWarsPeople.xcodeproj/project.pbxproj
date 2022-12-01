@@ -186,8 +186,8 @@
 		0C34CB282938BB9900DC3604 /* StartWarsPeopleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C34CBAF29390CA700DC3604 /* Api */,
-				0C34CBAE29390C9D00DC3604 /* Mocks */,
+				0C34CBAF29390CA700DC3604 /* ApiPeoples */,
+				0C34CBAE29390C9D00DC3604 /* MocksPeoples */,
 				0C34CBAD29390C9600DC3604 /* TestsPeople */,
 				0C34CBB029390CF100DC3604 /* TestConstants.swift */,
 			);
@@ -395,7 +395,7 @@
 			path = TestsPeople;
 			sourceTree = "<group>";
 		};
-		0C34CBAE29390C9D00DC3604 /* Mocks */ = {
+		0C34CBAE29390C9D00DC3604 /* MocksPeoples */ = {
 			isa = PBXGroup;
 			children = (
 				0C34CBB429390DD200DC3604 /* PeoplesViewMock.swift */,
@@ -405,16 +405,16 @@
 				0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */,
 				0C34CBC82939212500DC3604 /* ApiManagerMock.swift */,
 			);
-			path = Mocks;
+			path = MocksPeoples;
 			sourceTree = "<group>";
 		};
-		0C34CBAF29390CA700DC3604 /* Api */ = {
+		0C34CBAF29390CA700DC3604 /* ApiPeoples */ = {
 			isa = PBXGroup;
 			children = (
 				0C34CBB829390F6E00DC3604 /* PeoplesApiMock.swift */,
 				0C34CBBE2939196900DC3604 /* PeoplesResponseApiMock.swift */,
 			);
-			path = Api;
+			path = ApiPeoples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

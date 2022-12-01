@@ -10,6 +10,7 @@ import UIKit
 internal final class FilmsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableViewFilms: UITableView!
+    @IBOutlet weak var loadingBarFilms: UIActivityIndicatorView!
     
     var presenter: FilmsPresenterProtocol?
     
@@ -48,6 +49,19 @@ internal final class FilmsViewController: UIViewController, UITableViewDataSourc
 }
 
 extension FilmsViewController: FilmsViewProtocol{
+    func loadIndicator(indicatorBool: Bool) {
+        DispatchQueue.main.async {
+            switch indicatorBool {
+            case true:
+                self.loadingBarFilms.isHidden = false
+                self.loadingBarFilms.startAnimating()
+            case false:
+                self.loadingBarFilms.isHidden = true
+                self.loadingBarFilms.stopAnimating()
+            }
+        }
+    }
+    
     func loadFilms() {
         DispatchQueue.main.async {
             self.tableViewFilms.reloadData()

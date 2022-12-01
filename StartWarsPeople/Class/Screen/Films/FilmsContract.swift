@@ -10,6 +10,8 @@ import UIKit
 
 protocol FilmsViewProtocol: BaseProtocol {
     func loadFilms()
+    func loadIndicator(indicatorBool: Bool)
+
 }
 
 protocol FilmsPresenterProtocol {

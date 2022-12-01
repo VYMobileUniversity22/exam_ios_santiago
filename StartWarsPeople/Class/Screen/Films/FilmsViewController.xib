@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilmsViewController" customModule="StartWarsPeople" customModuleProvider="target">
             <connections>
+                <outlet property="loadingBarFilms" destination="15U-iP-xZW" id="nXY-Sg-k5c"/>
                 <outlet property="tableViewFilms" destination="aGL-VF-2bb" id="olu-tW-waO"/>
                 <outlet property="view" destination="zOf-nh-H78" id="vl5-cQ-0H1"/>
             </connections>
@@ -23,11 +24,16 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="15U-iP-xZW">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="uAn-Sm-ihf"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="15U-iP-xZW" firstAttribute="centerY" secondItem="zOf-nh-H78" secondAttribute="centerY" id="3Ya-Yt-mgK"/>
                 <constraint firstItem="uAn-Sm-ihf" firstAttribute="bottom" secondItem="aGL-VF-2bb" secondAttribute="bottom" id="5ZI-Rl-ByK"/>
+                <constraint firstItem="15U-iP-xZW" firstAttribute="centerX" secondItem="zOf-nh-H78" secondAttribute="centerX" id="9Yd-bg-glx"/>
                 <constraint firstItem="aGL-VF-2bb" firstAttribute="top" secondItem="uAn-Sm-ihf" secondAttribute="top" id="G7F-Uy-8ZE"/>
                 <constraint firstItem="aGL-VF-2bb" firstAttribute="leading" secondItem="uAn-Sm-ihf" secondAttribute="leading" id="Hsb-zm-TGH"/>
                 <constraint firstItem="uAn-Sm-ihf" firstAttribute="trailing" secondItem="aGL-VF-2bb" secondAttribute="trailing" id="iqz-xu-KBA"/>
