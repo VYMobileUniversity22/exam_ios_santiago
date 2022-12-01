@@ -12,6 +12,7 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
     @IBOutlet weak var collectionViewPeoples: UICollectionView!
     
     var presenter: PeoplesPresenterProtocol?
+    var delegate: PeoplesCoordinatorDelegate?
     
     public convenience init( presenter: PeoplesPresenterProtocol){
         self.init(nibName: "PeoplesViewController", bundle: nil)
@@ -33,7 +34,33 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellsPeo", for: <#T##IndexPath#>)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellsPeoples", for: indexPath) as? CustomCellsPeoples else {
+            return CustomCellsPeoples()
+        }
+        cell.nameLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).name
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let people = presenter?.peoplesAtIndex(index: indexPath.row) else {
+            return
+        }
+        delegate?.goToDetailScreen(sender: self)
+    }
+}
+
+extension PeoplesViewController: PeoplesViewProtocol{
+    func loadPeoples() {
+        DispatchQueue.main.async {
+            self.collectionViewPeoples.reloadData()
+        }
+    }
+    
+    func showError(message: String) {
+        DispatchQueue.main.async {
+            ShowAlert().showAlertView(message: message, parent: self)
+        }
     }
     
     

@@ -24,7 +24,7 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
                 self.view?.showError(message: error.localizedDescription)
             case let .success(people):
                 self.peoples.append(contentsOf: people.results)
-                self.view?.loadVehicles()
+                self.view?.loadPeoples()
             }
         }
     }

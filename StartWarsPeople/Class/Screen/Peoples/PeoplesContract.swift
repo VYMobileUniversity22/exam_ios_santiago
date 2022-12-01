@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol PeoplesViewProtocol: BaseProtocol {
-    func loadVehicles()
+    func loadPeoples()
 }
 
 protocol PeoplesPresenterProtocol {
