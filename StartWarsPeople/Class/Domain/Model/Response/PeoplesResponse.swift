@@ -6,9 +6,9 @@
 //
 
 import Foundation
-protocol PeoplesResponse{
-    var count: Int {get}
-    var next: String? {get}
-    var previous: String? {get}
-    var results: [PeoplesSW] {get}
+protocol PeoplesResponse {
+    var count: Int { get }
+    var next: String? { get }
+    var previous: String? { get }
+    var results: [PeoplesSW] { get }
 }

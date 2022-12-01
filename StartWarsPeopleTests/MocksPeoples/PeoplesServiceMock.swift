@@ -11,11 +11,8 @@ import Foundation
 class PeoplesServiceMock: PeoplesServiceProtocol {
     var getPeoplesServiceWasCalled = false
 
-    
     func getPeoplesService() -> StartWarsPeople.PeoplesServiceContract {
         getPeoplesServiceWasCalled = true
         return PeoplesServiceApiMock()
     }
-    
-    
 }

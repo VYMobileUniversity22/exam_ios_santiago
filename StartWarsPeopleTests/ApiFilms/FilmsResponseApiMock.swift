@@ -9,8 +9,8 @@ import Foundation
 @testable import StartWarsPeople
 
 struct FilmsResponseApiMock: FilmsResponse {
-    var results: [StartWarsPeople.FilmsSW] {castresults}
-    
+    var results: [StartWarsPeople.FilmsSW] { castresults }
+
     private let castresults: [FilmsApiMock]
 
     init(castresults: [FilmsApiMock]) {

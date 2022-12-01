@@ -20,7 +20,7 @@ class FilmsInteractorMock: FilmsInteractorProtocol {
             completion(.success(TestConstants.film))
         }
     }
-    
+
     func getFilms() -> StartWarsPeople.PeoplesSW {
         funcGetFilmsCalled = true
         return TestConstants.people

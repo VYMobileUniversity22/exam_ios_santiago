@@ -8,59 +8,60 @@
 import Foundation
 import UIKit
 internal final class PeoplesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    @IBOutlet weak var loadingBar: UIActivityIndicatorView!
-    @IBOutlet weak var collectionViewPeoples: UICollectionView!
-    
+    @IBOutlet var loadingBar: UIActivityIndicatorView!
+    @IBOutlet var collectionViewPeoples: UICollectionView!
+
     var presenter: PeoplesPresenterProtocol?
     var delegate: PeoplesCoordinatorDelegate?
-    
-    public convenience init( presenter: PeoplesPresenterProtocol){
+
+    public convenience init(presenter: PeoplesPresenterProtocol) {
         self.init(nibName: "PeoplesViewController", bundle: nil)
         self.presenter = presenter
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         collectionViewPeoples.dataSource = self
         collectionViewPeoples.delegate = self
-        
+
         collectionViewPeoples.register(UINib(nibName: "CellsPeoples", bundle: nil), forCellWithReuseIdentifier: "CellsPeoples")
         presenter?.getPeoples()
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return presenter?.getPeoplesCount() ?? 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellsPeoples", for: indexPath) as? CustomCellsPeoples else {
             return CustomCellsPeoples()
         }
         cell.nameLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).name
         cell.birthYearLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).birthYear
-        if presenter?.peoplesAtIndex(index: indexPath.row).gender == "male"{
+
+        if presenter?.peoplesAtIndex(index: indexPath.row).gender == "male" {
             cell.genderImage.image = UIImage(named: "MaleIcon.svg")
-        } else if presenter?.peoplesAtIndex(index: indexPath.row).gender == "female"{
-            cell.genderImage.image = UIImage(named:"FemaleIcon.svg")
+        } else if presenter?.peoplesAtIndex(index: indexPath.row).gender == "female" {
+            cell.genderImage.image = UIImage(named: "FemaleIcon.svg")
         } else {
-            cell.genderImage.image = UIImage(named:"QuestionIcon.svg")
+            cell.genderImage.image = UIImage(named: "QuestionIcon.svg")
         }
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let people = presenter?.peoplesAtIndex(index: indexPath.row) else {
             return
         }
         delegate?.goToDetailScreen(people: people, sender: self)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let numberRowForCell = presenter?.getPeoplesCount() else {return}
+        guard let numberRowForCell = presenter?.getPeoplesCount() else { return }
+
         if presenter?.getNextPage() == true {
-            if indexPath.row == (numberRowForCell - 5){
+            if indexPath.row == (numberRowForCell - 5) {
                 presenter?.getPeoples()
                 loadIndicator(indicatorBool: false)
             }
@@ -68,7 +69,7 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
     }
 }
 
-extension PeoplesViewController: PeoplesViewProtocol{
+extension PeoplesViewController: PeoplesViewProtocol {
     func loadIndicator(indicatorBool: Bool) {
         DispatchQueue.main.async {
             switch indicatorBool {
@@ -81,19 +82,17 @@ extension PeoplesViewController: PeoplesViewProtocol{
             }
         }
     }
-    
+
     func loadPeoples() {
         DispatchQueue.main.async {
             self.collectionViewPeoples.reloadData()
         }
     }
-    
+
     func showError(message: String) {
         DispatchQueue.main.async {
             ShowAlert().showAlertView(message: message,
                                       parent: self)
         }
     }
-    
-    
 }

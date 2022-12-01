@@ -8,13 +8,11 @@
 import Foundation
 import UIKit
 
-class CustomCellsPeoples: UICollectionViewCell{
-    
-    @IBOutlet weak var genderImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    @IBOutlet weak var birthYearLabel: UILabel!
-    
+class CustomCellsPeoples: UICollectionViewCell {
+    @IBOutlet var genderImage: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var birthYearLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -10,13 +10,13 @@ import Foundation
 
 struct PeoplesApiMock: PeoplesSW {
     var name: String
-    
+
     var birthYear: String
-    
+
     var gender: String
-    
+
     var films: [String]
-    
+
     init(name: String, birthYear: String, gender: String, films: [String]) {
         self.name = name
         self.birthYear = birthYear

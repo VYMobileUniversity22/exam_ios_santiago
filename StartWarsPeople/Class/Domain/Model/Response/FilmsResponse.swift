@@ -6,6 +6,6 @@
 //
 
 import Foundation
-protocol FilmsResponse{
-    var results: [FilmsSW] {get}
+protocol FilmsResponse {
+    var results: [FilmsSW] { get }
 }

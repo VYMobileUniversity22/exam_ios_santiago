@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 public class FilmsServiceApi: FilmsServiceContract {
     var apiManager: ApiManagerProtocol
 

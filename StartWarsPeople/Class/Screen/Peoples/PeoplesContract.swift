@@ -11,14 +11,13 @@ import UIKit
 protocol PeoplesViewProtocol: BaseProtocol {
     func loadPeoples()
     func loadIndicator(indicatorBool: Bool)
-
 }
 
 protocol PeoplesPresenterProtocol {
     var view: PeoplesViewProtocol? { get set }
 
     func getNextPage() -> Bool
-    
+
     func getPeoples()
     func getPeoplesCount() -> Int
     func peoplesAtIndex(index: Int) -> PeoplesSW

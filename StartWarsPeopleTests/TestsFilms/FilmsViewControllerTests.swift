@@ -9,40 +9,40 @@ import Foundation
 @testable import StartWarsPeople
 import XCTest
 
-final class FilmsViewControllerTests: XCTestCase{
+final class FilmsViewControllerTests: XCTestCase {
     var sut: FilmsViewController!
     var presenterMock: FilmsPresenterMock!
     var viewMock: FilmsViewMock!
-    
+
     override func setUp() {
         super.setUp()
         createSut()
     }
-    
+
     override func tearDown() {
         super.tearDown()
         releaseSut()
     }
-    
-    func createSut(){
+
+    func createSut() {
         presenterMock = FilmsPresenterMock()
         viewMock = FilmsViewMock()
-        
+
         presenterMock.view = viewMock
         sut = FilmsViewController(presenter: presenterMock)
     }
-    
-    func releaseSut(){
+
+    func releaseSut() {
         sut = nil
         presenterMock = nil
         viewMock = nil
     }
-    
-    func testGetFilms(){
+
+    func testGetFilms() {
         _ = sut.view
         XCTAssertTrue(presenterMock.funcGetFilmsCalled)
     }
-    
+
     func numberOfRowsInSection() {
         _ = sut.view
         let tableView = sut.tableViewFilms
@@ -65,5 +65,4 @@ final class FilmsViewControllerTests: XCTestCase{
         XCTAssertEqual(cellSut?.directorLabelFilms.text, secondExpectedLabel)
         XCTAssertEqual(cellSut?.releaseDateLabelFilms.text, thirdExpectedLabel)
     }
-    
 }

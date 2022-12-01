@@ -10,11 +10,11 @@ import Foundation
 
 struct FilmsApiMock: FilmsSW {
     var title: String
-    
+
     var director: String
-    
+
     var releaseDate: String
-    
+
     init(title: String, director: String, releaseDate: String) {
         self.title = title
         self.director = director

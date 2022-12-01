@@ -7,7 +7,7 @@
 
 import Foundation
 protocol FilmsSW {
-    var title: String {get}
-    var director: String {get}
-    var releaseDate: String {get}
+    var title: String { get }
+    var director: String { get }
+    var releaseDate: String { get }
 }

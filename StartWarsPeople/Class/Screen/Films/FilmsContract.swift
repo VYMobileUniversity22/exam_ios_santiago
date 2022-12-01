@@ -11,14 +11,12 @@ import UIKit
 protocol FilmsViewProtocol: BaseProtocol {
     func loadFilms()
     func loadIndicator(indicatorBool: Bool)
-
 }
 
 protocol FilmsPresenterProtocol {
     var view: FilmsViewProtocol? { get set }
 
     func getFilms()
-
 
     func getFilmsCount() -> Int
     func filmsAtIndex(index: Int) -> FilmsSW

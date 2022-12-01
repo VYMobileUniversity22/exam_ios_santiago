@@ -9,9 +9,7 @@ import Foundation
 @testable import StartWarsPeople
 
 class FilmsServiceApiMock: FilmsServiceContract {
-    
     func getFilmsResult(url: String, completion: @escaping (Result<StartWarsPeople.FilmsSW, Error>) -> Void) {
         completion(.success(TestConstants.film))
     }
-    
 }

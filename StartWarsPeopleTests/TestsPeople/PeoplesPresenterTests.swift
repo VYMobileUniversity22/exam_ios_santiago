@@ -12,52 +12,52 @@ class PeoplesPresenterTests: XCTestCase {
     var sut: PeoplesPresenter!
     var interactorMock: PeoplesInteractorMock!
     var viewMock: PeoplesViewMock!
-    
+
     override func setUp() {
         super.setUp()
         createSut()
     }
-    
-    func createSut(){
+
+    func createSut() {
         interactorMock = PeoplesInteractorMock()
         viewMock = PeoplesViewMock()
         sut = PeoplesPresenter(interactor: interactorMock)
-        
+
         sut.view = viewMock
     }
-    
+
     override func tearDown() {
         super.tearDown()
         releaseSut()
     }
-    
-    func releaseSut(){
+
+    func releaseSut() {
         interactorMock = nil
         viewMock = nil
         sut = nil
     }
-    
-    func testGetPeoplesSucces(){
+
+    func testGetPeoplesSucces() {
         _ = sut.view
         sut.getPeoples()
         XCTAssertTrue(interactorMock.funcGetPeoplesResult)
         XCTAssertTrue(viewMock.funcLoadPeoplesCalled)
     }
-    
-    func testGetPeoplesCount(){
+
+    func testGetPeoplesCount() {
         sut.peoples = TestConstants.peoples
         let count = sut.getPeoplesCount()
         let expected = 1
         XCTAssertEqual(count, expected)
     }
-    
-    func testGetPeoplesAtIndex(){
+
+    func testGetPeoplesAtIndex() {
         sut.getPeoples()
         let result = sut.peoplesAtIndex(index: 0)
         XCTAssertEqual(result.name, "prueba")
     }
-    
-    func testGetNextPage(){
+
+    func testGetNextPage() {
         sut.hasNextPage = true
         let count = sut.getNextPage()
         XCTAssertTrue(count)

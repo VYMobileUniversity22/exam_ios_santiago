@@ -12,28 +12,28 @@ class PeoplesInteractorTests: XCTestCase {
     var sut: PeoplesInteractor!
     var serviceMock: PeoplesServiceMock!
     var presenterMock: PeoplesPresenterMock!
-    
+
     override func setUp() {
         createSut()
     }
-    
-    func createSut(){
+
+    func createSut() {
         serviceMock = PeoplesServiceMock()
         presenterMock = PeoplesPresenterMock()
         sut = PeoplesInteractor(peoplesService: serviceMock)
     }
-    
+
     override func tearDown() {
         super.tearDown()
         releaseSut()
     }
-    
-    func releaseSut(){
+
+    func releaseSut() {
         serviceMock = nil
         presenterMock = nil
         sut = nil
     }
-    
+
     func testGetPeoplesResult() {
         sut.getPeoplesResult(url: "http") { _ in
             XCTAssertEqual(self.serviceMock.getPeoplesServiceWasCalled, true)

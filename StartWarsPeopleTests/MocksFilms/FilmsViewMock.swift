@@ -11,20 +11,19 @@ import Foundation
 class FilmsViewMock: FilmsViewProtocol {
     var funcLoadFilmsCalled = false
     var funcShowErrorCalled = false
-    
+
     var funcLoadIndicatorCalled = false
     var funcLoadBoolWasCalled = false
     var funcNotLoadBollWasCalled = false
 
-    
     func loadFilms() {
         funcLoadFilmsCalled = true
     }
-    
+
     func showError(message: String) {
         funcShowErrorCalled = true
     }
-    
+
     func loadIndicator(indicatorBool: Bool) {
         funcLoadIndicatorCalled = true
         if indicatorBool {
@@ -34,4 +33,3 @@ class FilmsViewMock: FilmsViewProtocol {
         }
     }
 }
-

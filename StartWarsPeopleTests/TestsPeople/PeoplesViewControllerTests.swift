@@ -9,40 +9,40 @@ import Foundation
 @testable import StartWarsPeople
 import XCTest
 
-final class PeoplesViewControllerTests: XCTestCase{
+final class PeoplesViewControllerTests: XCTestCase {
     var sut: PeoplesViewController!
     var presenterMock: PeoplesPresenterMock!
     var viewMock: PeoplesViewMock!
-    
+
     override func setUp() {
         super.setUp()
         createSut()
     }
-    
+
     override func tearDown() {
         super.tearDown()
         releaseSut()
     }
-    
-    func createSut(){
+
+    func createSut() {
         presenterMock = PeoplesPresenterMock()
         viewMock = PeoplesViewMock()
-        
+
         presenterMock.view = viewMock
         sut = PeoplesViewController(presenter: presenterMock)
     }
-    
-    func releaseSut(){
+
+    func releaseSut() {
         sut = nil
         presenterMock = nil
         viewMock = nil
     }
-    
-    func testGetPeoples(){
+
+    func testGetPeoples() {
         _ = sut.view
         XCTAssertTrue(presenterMock.funcGetPeoplesCalled)
     }
-    
+
     func testNumberOfItemsInsection() {
         _ = sut.view
         let collectionView = sut.collectionViewPeoples
@@ -78,5 +78,4 @@ final class PeoplesViewControllerTests: XCTestCase{
         sut.collectionView(collectionView!, willDisplay: TestConstants.testCell, forItemAt: TestConstants.indexPath)
         XCTAssertTrue(presenterMock.funcGetPeoplesCountWasCalled)
     }
-    
 }

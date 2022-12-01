@@ -11,11 +11,8 @@ import Foundation
 class FilmsServiceMock: FilmsServiceProtocol {
     var getFilmsServiceWasCalled = false
 
-    
     func getFilmsService() -> StartWarsPeople.FilmsServiceContract {
         getFilmsServiceWasCalled = true
         return FilmsServiceApiMock()
     }
-    
-    
 }

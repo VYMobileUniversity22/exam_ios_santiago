@@ -8,9 +8,9 @@
 import Foundation
 internal final class FilmsInteractor {
     private let filmsService: FilmsServiceProtocol
-    
+
     var people: PeoplesSW
-    
+
     init(people: PeoplesSW, filmsService: FilmsServiceProtocol = FilmsService()) {
         self.people = people
         self.filmsService = filmsService
@@ -25,8 +25,8 @@ extension FilmsInteractor: FilmsInteractorProtocol {
             completion(result)
         }
     }
-    
-    func getFilms() -> PeoplesSW{
-        return self.people
+
+    func getFilms() -> PeoplesSW {
+        return people
     }
 }

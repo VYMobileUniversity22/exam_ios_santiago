@@ -10,15 +10,15 @@ import Foundation
 
 struct PeoplesResponseApiMock: PeoplesResponse {
     var count: Int
-    
+
     var next: String?
-    
+
     var previous: String?
-    
-    var results: [StartWarsPeople.PeoplesSW] {castresults}
-    
+
+    var results: [StartWarsPeople.PeoplesSW] { castresults }
+
     private let castresults: [PeoplesApiMock]
-    
+
     init(count: Int, next: String? = nil, previous: String? = nil, castresults: [PeoplesApiMock]) {
         self.count = count
         self.next = next

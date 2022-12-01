@@ -38,7 +38,6 @@
 		0C34CB8A2938D79A00DC3604 /* FilmsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB892938D79A00DC3604 /* FilmsPresenter.swift */; };
 		0C34CB8C2938D7A500DC3604 /* FilmsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB8B2938D7A500DC3604 /* FilmsInteractor.swift */; };
 		0C34CB8E2938D7AE00DC3604 /* FilmsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB8D2938D7AE00DC3604 /* FilmsService.swift */; };
-		0C34CB902938D7BC00DC3604 /* FilmsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB8F2938D7BC00DC3604 /* FilmsCoordinator.swift */; };
 		0C34CB942938D7D800DC3604 /* FilmsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB932938D7D800DC3604 /* FilmsViewController.xib */; };
 		0C34CB962938D84D00DC3604 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB952938D84D00DC3604 /* Films.swift */; };
 		0C34CB9A2938D90600DC3604 /* FilmsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB992938D90600DC3604 /* FilmsResponse.swift */; };
@@ -120,7 +119,6 @@
 		0C34CB892938D79A00DC3604 /* FilmsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsPresenter.swift; sourceTree = "<group>"; };
 		0C34CB8B2938D7A500DC3604 /* FilmsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsInteractor.swift; sourceTree = "<group>"; };
 		0C34CB8D2938D7AE00DC3604 /* FilmsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsService.swift; sourceTree = "<group>"; };
-		0C34CB8F2938D7BC00DC3604 /* FilmsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsCoordinator.swift; sourceTree = "<group>"; };
 		0C34CB932938D7D800DC3604 /* FilmsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsViewController.xib; sourceTree = "<group>"; };
 		0C34CB952938D84D00DC3604 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		0C34CB992938D90600DC3604 /* FilmsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponse.swift; sourceTree = "<group>"; };
@@ -394,7 +392,6 @@
 				0C34CB892938D79A00DC3604 /* FilmsPresenter.swift */,
 				0C34CB8B2938D7A500DC3604 /* FilmsInteractor.swift */,
 				0C34CB8D2938D7AE00DC3604 /* FilmsService.swift */,
-				0C34CB8F2938D7BC00DC3604 /* FilmsCoordinator.swift */,
 				0C34CB932938D7D800DC3604 /* FilmsViewController.xib */,
 			);
 			path = Films;
@@ -608,7 +605,6 @@
 				0C34CB622938BDE000DC3604 /* PeoplesCoordinator.swift in Sources */,
 				0C34CBAA29390B6E00DC3604 /* CallsConstants.swift in Sources */,
 				0C34CBE429393B6C00DC3604 /* ExtentionImage.swift in Sources */,
-				0C34CB902938D7BC00DC3604 /* FilmsCoordinator.swift in Sources */,
 				0C34CB712938BF6B00DC3604 /* PeoplesServiceContract.swift in Sources */,
 				0C34CB602938BDD500DC3604 /* PeoplesService.swift in Sources */,
 				0C34CB862938D77B00DC3604 /* FilmsContract.swift in Sources */,

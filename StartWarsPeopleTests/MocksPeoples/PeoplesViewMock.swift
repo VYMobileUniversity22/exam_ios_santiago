@@ -11,20 +11,19 @@ import Foundation
 class PeoplesViewMock: PeoplesViewProtocol {
     var funcLoadPeoplesCalled = false
     var funcShowErrorCalled = false
-    
+
     var funcLoadIndicatorCalled = false
     var funcLoadBoolWasCalled = false
     var funcNotLoadBollWasCalled = false
 
-    
     func loadPeoples() {
         funcLoadPeoplesCalled = true
     }
-    
+
     func showError(message: String) {
         funcShowErrorCalled = true
     }
-    
+
     func loadIndicator(indicatorBool: Bool) {
         funcLoadIndicatorCalled = true
         if indicatorBool {

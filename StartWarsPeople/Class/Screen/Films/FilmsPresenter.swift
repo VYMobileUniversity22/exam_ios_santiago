@@ -22,7 +22,6 @@ extension FilmsPresenter: FilmsPresenterProtocol{
     func getFilms() {
         view?.loadIndicator(indicatorBool: true)
         self.people = interactor.getFilms().films
-        
         for character in people{
             interactor.getFilmsResult(url: character) {
                 result in
@@ -34,6 +33,7 @@ extension FilmsPresenter: FilmsPresenterProtocol{
                 case.success(let film):
                     self.films.append(film)
                     self.view?.loadFilms()
+                    self.sortArray()
                     self.view?.loadIndicator(indicatorBool: false)
 
                 }
@@ -49,7 +49,7 @@ extension FilmsPresenter: FilmsPresenterProtocol{
         return self.films[index]
     }
     
-
-    
-    
+    func sortArray() {
+        films = films.sorted(by: { $0.releaseDate > $1.releaseDate })
+        }
 }

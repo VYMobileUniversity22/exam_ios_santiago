@@ -13,8 +13,8 @@ final class ApiManagerMock: ApiManagerProtocol {
     var apiCallWasCalled = false
     var getPeoplesWithSuccessWasCalled = false
     var getPeoplesWithErrorWasCalled = false
-    
-    func apiCall<T>(for url: String, completion: @escaping (Result<T, Error>) -> Void) where T : Decodable {
+
+    func apiCall<T>(for url: String, completion: @escaping (Result<T, Error>) -> Void) where T: Decodable {
         apiCallWasCalled = true
         if showError {
             getPeoplesWithErrorWasCalled = true
@@ -24,6 +24,4 @@ final class ApiManagerMock: ApiManagerProtocol {
             completion(.success(TestConstants.responseApi as! T))
         }
     }
-    
-    
 }

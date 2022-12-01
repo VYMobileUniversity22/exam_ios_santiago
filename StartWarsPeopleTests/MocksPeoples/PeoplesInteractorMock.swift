@@ -11,7 +11,7 @@ import Foundation
 class PeoplesInteractorMock: PeoplesInteractorProtocol {
     var funcGetPeoplesResult = false
     var showError = false
-    
+
     func getPeoplesResult(url: String, completion: @escaping (Result<StartWarsPeople.PeoplesResponse, Error>) -> Void) {
         funcGetPeoplesResult = true
         if showError {

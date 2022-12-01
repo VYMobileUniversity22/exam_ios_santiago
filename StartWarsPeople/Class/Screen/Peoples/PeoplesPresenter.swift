@@ -6,32 +6,34 @@
 //
 
 import Foundation
-internal final class PeoplesPresenter: PeoplesPresenterProtocol{
+internal final class PeoplesPresenter: PeoplesPresenterProtocol {
     var view: PeoplesViewProtocol?
     var interactor: PeoplesInteractorProtocol
     var storeManager: StoreManagerProtocol
     var url = CallsConstants.peoplesUrl
     var peoples = [PeoplesSW]()
     var hasNextPage = true
-    
-    init( interactor: PeoplesInteractorProtocol, storeManager: StoreManagerProtocol = StoreManager.shared) {
+
+    init(interactor: PeoplesInteractorProtocol,
+         storeManager: StoreManagerProtocol = StoreManager.shared) {
         self.storeManager = storeManager
         self.interactor = interactor
     }
-    
+
     func getPeoples() {
         view?.loadIndicator(indicatorBool: true)
         interactor.getPeoplesResult(url: url) {
             result in
             switch result {
             case let .failure(error):
-                if let info = self.getPeoplesStorage(){
+                if let info = self.getPeoplesStorage() {
                     self.hasNextPage = false
                     self.peoples = info
                     self.view?.loadPeoples()
                     self.view?.showError(message: "No hay internet, usaras la Caché")
                     self.view?.loadIndicator(indicatorBool: false)
-                }else{
+
+                } else {
                     self.view?.showError(message: error.localizedDescription)
                 }
             case let .success(people):
@@ -46,19 +48,19 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
             }
         }
     }
-    
-    func getNextPage() -> Bool{
+
+    func getNextPage() -> Bool {
         return hasNextPage
     }
-    
+
     func getPeoplesCount() -> Int {
         return peoples.count
     }
-    
+
     func peoplesAtIndex(index: Int) -> PeoplesSW {
-        return self.peoples[index]
+        return peoples[index]
     }
-    
+
     func getPeoplesStorage() -> [PeoplesSW]? {
         do {
             let people: [PeoplesApi] = try storeManager.getObject(filename: "people.json")
@@ -75,7 +77,6 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
             return
         }
 
-        try? storeManager.saveObject(object:peopleObj, filename: "people.json")
+        try? storeManager.saveObject(object: peopleObj, filename: "people.json")
     }
-    
 }
