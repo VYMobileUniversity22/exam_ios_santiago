@@ -40,7 +40,13 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
         }
         cell.nameLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).name
         cell.birthYearLabel.text = presenter?.peoplesAtIndex(index: indexPath.row).birthYear
-        
+        if presenter?.peoplesAtIndex(index: indexPath.row).gender == "male"{
+            cell.genderImage.image = UIImage(named: "MaleIcon.svg")
+        } else if presenter?.peoplesAtIndex(index: indexPath.row).gender == "female"{
+            cell.genderImage.image = UIImage(named:"FemaleIcon.svg")
+        } else {
+            cell.genderImage.image = UIImage(named:"QuestionIcon.svg")
+        }
         return cell
     }
     

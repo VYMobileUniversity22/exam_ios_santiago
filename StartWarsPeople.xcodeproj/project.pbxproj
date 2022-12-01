@@ -72,6 +72,7 @@
 		0C34CBDD293934CE00DC3604 /* FilmsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBDC293934CE00DC3604 /* FilmsInteractorTests.swift */; };
 		0C34CBDF293934ED00DC3604 /* FilmsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBDE293934ED00DC3604 /* FilmsServiceMock.swift */; };
 		0C34CBE12939353D00DC3604 /* FilmsServiceApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBE02939353D00DC3604 /* FilmsServiceApiMock.swift */; };
+		0C34CBE429393B6C00DC3604 /* ExtentionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBE329393B6C00DC3604 /* ExtentionImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		0C34CBDC293934CE00DC3604 /* FilmsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsInteractorTests.swift; sourceTree = "<group>"; };
 		0C34CBDE293934ED00DC3604 /* FilmsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceMock.swift; sourceTree = "<group>"; };
 		0C34CBE02939353D00DC3604 /* FilmsServiceApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceApiMock.swift; sourceTree = "<group>"; };
+		0C34CBE329393B6C00DC3604 /* ExtentionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				0C34CBA929390B6E00DC3604 /* CallsConstants.swift */,
+				0C34CBE329393B6C00DC3604 /* ExtentionImage.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				0C34CB8C2938D7A500DC3604 /* FilmsInteractor.swift in Sources */,
 				0C34CB622938BDE000DC3604 /* PeoplesCoordinator.swift in Sources */,
 				0C34CBAA29390B6E00DC3604 /* CallsConstants.swift in Sources */,
+				0C34CBE429393B6C00DC3604 /* ExtentionImage.swift in Sources */,
 				0C34CB902938D7BC00DC3604 /* FilmsCoordinator.swift in Sources */,
 				0C34CB712938BF6B00DC3604 /* PeoplesServiceContract.swift in Sources */,
 				0C34CB602938BDD500DC3604 /* PeoplesService.swift in Sources */,
