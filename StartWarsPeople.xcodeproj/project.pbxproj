@@ -62,6 +62,16 @@
 		0C34CBC529391D8600DC3604 /* PeoplesServiceApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */; };
 		0C34CBC729391FFE00DC3604 /* PeoplesServiceApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC629391FFE00DC3604 /* PeoplesServiceApiTests.swift */; };
 		0C34CBC92939212500DC3604 /* ApiManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC82939212500DC3604 /* ApiManagerMock.swift */; };
+		0C34CBCF293928CD00DC3604 /* FilmsApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBCE293928CD00DC3604 /* FilmsApiMock.swift */; };
+		0C34CBD1293928DF00DC3604 /* FilmsResponseApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBD0293928DF00DC3604 /* FilmsResponseApiMock.swift */; };
+		0C34CBD32939291600DC3604 /* FilmsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBD22939291600DC3604 /* FilmsViewMock.swift */; };
+		0C34CBD52939293200DC3604 /* FilmsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBD42939293200DC3604 /* FilmsPresenterMock.swift */; };
+		0C34CBD72939299E00DC3604 /* FilmsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBD62939299E00DC3604 /* FilmsViewControllerTests.swift */; };
+		0C34CBD929392FAE00DC3604 /* FilmsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBD829392FAE00DC3604 /* FilmsPresenterTests.swift */; };
+		0C34CBDB2939302C00DC3604 /* FilmsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBDA2939302C00DC3604 /* FilmsInteractorMock.swift */; };
+		0C34CBDD293934CE00DC3604 /* FilmsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBDC293934CE00DC3604 /* FilmsInteractorTests.swift */; };
+		0C34CBDF293934ED00DC3604 /* FilmsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBDE293934ED00DC3604 /* FilmsServiceMock.swift */; };
+		0C34CBE12939353D00DC3604 /* FilmsServiceApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBE02939353D00DC3604 /* FilmsServiceApiMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +143,16 @@
 		0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceApiMock.swift; sourceTree = "<group>"; };
 		0C34CBC629391FFE00DC3604 /* PeoplesServiceApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceApiTests.swift; sourceTree = "<group>"; };
 		0C34CBC82939212500DC3604 /* ApiManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerMock.swift; sourceTree = "<group>"; };
+		0C34CBCE293928CD00DC3604 /* FilmsApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsApiMock.swift; sourceTree = "<group>"; };
+		0C34CBD0293928DF00DC3604 /* FilmsResponseApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponseApiMock.swift; sourceTree = "<group>"; };
+		0C34CBD22939291600DC3604 /* FilmsViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewMock.swift; sourceTree = "<group>"; };
+		0C34CBD42939293200DC3604 /* FilmsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsPresenterMock.swift; sourceTree = "<group>"; };
+		0C34CBD62939299E00DC3604 /* FilmsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewControllerTests.swift; sourceTree = "<group>"; };
+		0C34CBD829392FAE00DC3604 /* FilmsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsPresenterTests.swift; sourceTree = "<group>"; };
+		0C34CBDA2939302C00DC3604 /* FilmsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsInteractorMock.swift; sourceTree = "<group>"; };
+		0C34CBDC293934CE00DC3604 /* FilmsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsInteractorTests.swift; sourceTree = "<group>"; };
+		0C34CBDE293934ED00DC3604 /* FilmsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceMock.swift; sourceTree = "<group>"; };
+		0C34CBE02939353D00DC3604 /* FilmsServiceApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceApiMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,10 +194,9 @@
 		0C34CB112938BB9800DC3604 /* StartWarsPeople */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CBE22939390400DC3604 /* Assets */,
 				0C34CB432938BCF000DC3604 /* Class */,
 				0C34CB422938BC1F00DC3604 /* App */,
-				0C34CB1B2938BB9800DC3604 /* Assets.xcassets */,
-				0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */,
 				0C34CB202938BB9800DC3604 /* Info.plist */,
 			);
 			path = StartWarsPeople;
@@ -186,6 +205,9 @@
 		0C34CB282938BB9900DC3604 /* StartWarsPeopleTests */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CBCD293928AB00DC3604 /* TestsFilms */,
+				0C34CBCC2939289000DC3604 /* MocksFilms */,
+				0C34CBCA2939287900DC3604 /* ApiFilms */,
 				0C34CBAF29390CA700DC3604 /* ApiPeoples */,
 				0C34CBAE29390C9D00DC3604 /* MocksPeoples */,
 				0C34CBAD29390C9600DC3604 /* TestsPeople */,
@@ -417,6 +439,46 @@
 			path = ApiPeoples;
 			sourceTree = "<group>";
 		};
+		0C34CBCA2939287900DC3604 /* ApiFilms */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CBCE293928CD00DC3604 /* FilmsApiMock.swift */,
+				0C34CBD0293928DF00DC3604 /* FilmsResponseApiMock.swift */,
+			);
+			path = ApiFilms;
+			sourceTree = "<group>";
+		};
+		0C34CBCC2939289000DC3604 /* MocksFilms */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CBD22939291600DC3604 /* FilmsViewMock.swift */,
+				0C34CBD42939293200DC3604 /* FilmsPresenterMock.swift */,
+				0C34CBDA2939302C00DC3604 /* FilmsInteractorMock.swift */,
+				0C34CBDE293934ED00DC3604 /* FilmsServiceMock.swift */,
+				0C34CBE02939353D00DC3604 /* FilmsServiceApiMock.swift */,
+			);
+			path = MocksFilms;
+			sourceTree = "<group>";
+		};
+		0C34CBCD293928AB00DC3604 /* TestsFilms */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CBD62939299E00DC3604 /* FilmsViewControllerTests.swift */,
+				0C34CBD829392FAE00DC3604 /* FilmsPresenterTests.swift */,
+				0C34CBDC293934CE00DC3604 /* FilmsInteractorTests.swift */,
+			);
+			path = TestsFilms;
+			sourceTree = "<group>";
+		};
+		0C34CBE22939390400DC3604 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0C34CB1D2938BB9800DC3604 /* LaunchScreen.storyboard */,
+				0C34CB1B2938BB9800DC3604 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -565,18 +627,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C34CBCF293928CD00DC3604 /* FilmsApiMock.swift in Sources */,
+				0C34CBD929392FAE00DC3604 /* FilmsPresenterTests.swift in Sources */,
 				0C34CBC129391C5900DC3604 /* PeoplesInteractorTests.swift in Sources */,
+				0C34CBD52939293200DC3604 /* FilmsPresenterMock.swift in Sources */,
 				0C34CBC92939212500DC3604 /* ApiManagerMock.swift in Sources */,
+				0C34CBD1293928DF00DC3604 /* FilmsResponseApiMock.swift in Sources */,
 				0C34CBBD293918D900DC3604 /* PeoplesInteractorMock.swift in Sources */,
+				0C34CBDF293934ED00DC3604 /* FilmsServiceMock.swift in Sources */,
 				0C34CBB529390DD200DC3604 /* PeoplesViewMock.swift in Sources */,
 				0C34CBC529391D8600DC3604 /* PeoplesServiceApiMock.swift in Sources */,
+				0C34CBE12939353D00DC3604 /* FilmsServiceApiMock.swift in Sources */,
 				0C34CBBF2939196900DC3604 /* PeoplesResponseApiMock.swift in Sources */,
 				0C34CBB929390F6E00DC3604 /* PeoplesApiMock.swift in Sources */,
+				0C34CBD72939299E00DC3604 /* FilmsViewControllerTests.swift in Sources */,
+				0C34CBDB2939302C00DC3604 /* FilmsInteractorMock.swift in Sources */,
 				0C34CBB329390D9400DC3604 /* PeoplesViewControllerTests.swift in Sources */,
 				0C34CBB129390CF100DC3604 /* TestConstants.swift in Sources */,
 				0C34CBB729390DE800DC3604 /* PeoplesPresenterMock.swift in Sources */,
 				0C34CBC729391FFE00DC3604 /* PeoplesServiceApiTests.swift in Sources */,
 				0C34CBC329391CFF00DC3604 /* PeoplesServiceMock.swift in Sources */,
+				0C34CBD32939291600DC3604 /* FilmsViewMock.swift in Sources */,
+				0C34CBDD293934CE00DC3604 /* FilmsInteractorTests.swift in Sources */,
 				0C34CBBB2939184A00DC3604 /* PeoplesPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

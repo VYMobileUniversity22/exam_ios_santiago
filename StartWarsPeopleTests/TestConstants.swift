@@ -18,4 +18,8 @@ struct TestConstants{
     static let peoples = [people]
     static let response = PeoplesResponseApiMock(count: 1, next: "1", previous: nil, castresults: peoples)
     static let responseApi = PeoplesResponseApi()
+    
+    static let film = FilmsApiMock(title: "prueba", director: "director", releaseDate: "123")
+    static let films = [film]
+    static let filmsResponseApi = FilmsResponseApiMock(castresults: films)
 }

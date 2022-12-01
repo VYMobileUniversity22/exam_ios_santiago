@@ -12,6 +12,4 @@ class PeoplesServiceApiMock: PeoplesServiceContract {
     func getPeoplesResult(url: String, completion: @escaping (Result<StartWarsPeople.PeoplesResponse, Error>) -> Void) {
         completion(.success(TestConstants.response))
     }
-    
-    
 }
