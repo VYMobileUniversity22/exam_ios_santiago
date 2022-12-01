@@ -10,6 +10,8 @@ import UIKit
 
 protocol PeoplesViewProtocol: BaseProtocol {
     func loadPeoples()
+    func loadIndicator(indicatorBool: Bool)
+
 }
 
 protocol PeoplesPresenterProtocol {

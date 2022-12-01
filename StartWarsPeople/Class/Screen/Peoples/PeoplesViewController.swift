@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 internal final class PeoplesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var loadingBar: UIActivityIndicatorView!
     @IBOutlet weak var collectionViewPeoples: UICollectionView!
     
     var presenter: PeoplesPresenterProtocol?
@@ -55,12 +56,26 @@ internal final class PeoplesViewController: UIViewController, UICollectionViewDe
         if presenter?.getNextPage() == true {
             if indexPath.row == (numberRowForCell - 5){
                 presenter?.getPeoples()
+                loadIndicator(indicatorBool: false)
             }
         }
     }
 }
 
 extension PeoplesViewController: PeoplesViewProtocol{
+    func loadIndicator(indicatorBool: Bool) {
+        DispatchQueue.main.async {
+            switch indicatorBool {
+            case true:
+                self.loadingBar.isHidden = false
+                self.loadingBar.startAnimating()
+            case false:
+                self.loadingBar.isHidden = true
+                self.loadingBar.stopAnimating()
+            }
+        }
+    }
+    
     func loadPeoples() {
         DispatchQueue.main.async {
             self.collectionViewPeoples.reloadData()

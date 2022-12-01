@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PeoplesViewController" customModule="StartWarsPeople" customModuleProvider="target">
             <connections>
                 <outlet property="collectionViewPeoples" destination="3Yp-o0-5nv" id="0Ji-VJ-Ezv"/>
+                <outlet property="loadingBar" destination="9bU-8r-mGh" id="wVb-KX-6se"/>
                 <outlet property="view" destination="Vry-pN-Nn8" id="Ybr-Q0-g76"/>
             </connections>
         </placeholder>
@@ -29,16 +30,21 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9bU-8r-mGh">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="G56-XM-eFa"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="3Yp-o0-5nv" firstAttribute="leading" secondItem="G56-XM-eFa" secondAttribute="leading" id="3OU-7A-7o7"/>
                 <constraint firstItem="3Yp-o0-5nv" firstAttribute="top" secondItem="G56-XM-eFa" secondAttribute="top" id="4TM-TU-mvU"/>
+                <constraint firstItem="9bU-8r-mGh" firstAttribute="centerX" secondItem="Vry-pN-Nn8" secondAttribute="centerX" id="IxK-Hl-nLR"/>
                 <constraint firstItem="G56-XM-eFa" firstAttribute="trailing" secondItem="3Yp-o0-5nv" secondAttribute="trailing" id="V3y-40-NSN"/>
+                <constraint firstItem="9bU-8r-mGh" firstAttribute="centerY" secondItem="Vry-pN-Nn8" secondAttribute="centerY" id="eYQ-OP-kqV"/>
                 <constraint firstItem="G56-XM-eFa" firstAttribute="bottom" secondItem="3Yp-o0-5nv" secondAttribute="bottom" id="fRc-uP-sy1"/>
             </constraints>
-            <point key="canvasLocation" x="157" y="26"/>
+            <point key="canvasLocation" x="156.4885496183206" y="25.35211267605634"/>
         </view>
     </objects>
     <resources>

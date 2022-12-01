@@ -20,6 +20,7 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
     }
     
     func getPeoples() {
+        view?.loadIndicator(indicatorBool: true)
         interactor.getPeoplesResult(url: url) {
             result in
             switch result {
@@ -29,6 +30,7 @@ internal final class PeoplesPresenter: PeoplesPresenterProtocol{
                     self.peoples = info
                     self.view?.loadPeoples()
                     self.view?.showError(message: "No hay internet, usaras la Caché")
+                    self.view?.loadIndicator(indicatorBool: false)
                 }else{
                     self.view?.showError(message: error.localizedDescription)
                 }
