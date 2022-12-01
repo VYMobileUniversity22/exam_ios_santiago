@@ -34,6 +34,9 @@
 		0C34CB762938C09500DC3604 /* PeoplesResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB752938C09500DC3604 /* PeoplesResponseApi.swift */; };
 		0C34CB782938C27B00DC3604 /* CustomErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB772938C27B00DC3604 /* CustomErrorProtocol.swift */; };
 		0C34CB7A2938C28300DC3604 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB792938C28300DC3604 /* CustomAlert.swift */; };
+		0C34CB7C2938C35800DC3604 /* PeoplesServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB7B2938C35800DC3604 /* PeoplesServiceApi.swift */; };
+		0C34CB802938C8C400DC3604 /* CustomCellsPeoples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CB7F2938C8C400DC3604 /* CustomCellsPeoples.swift */; };
+		0C34CB822938C8CE00DC3604 /* CellsPeoples.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C34CB812938C8CE00DC3604 /* CellsPeoples.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		0C34CB752938C09500DC3604 /* PeoplesResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesResponseApi.swift; sourceTree = "<group>"; };
 		0C34CB772938C27B00DC3604 /* CustomErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorProtocol.swift; sourceTree = "<group>"; };
 		0C34CB792938C28300DC3604 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		0C34CB7B2938C35800DC3604 /* PeoplesServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceApi.swift; sourceTree = "<group>"; };
+		0C34CB7F2938C8C400DC3604 /* CustomCellsPeoples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellsPeoples.swift; sourceTree = "<group>"; };
+		0C34CB812938C8CE00DC3604 /* CellsPeoples.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellsPeoples.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +270,8 @@
 		0C34CB582938BD9900DC3604 /* CellsPeoples */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CB7F2938C8C400DC3604 /* CustomCellsPeoples.swift */,
+				0C34CB812938C8CE00DC3604 /* CellsPeoples.xib */,
 			);
 			path = CellsPeoples;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 		0C34CB682938BE0900DC3604 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0C34CB7B2938C35800DC3604 /* PeoplesServiceApi.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C34CB822938C8CE00DC3604 /* CellsPeoples.xib in Resources */,
 				0C34CB642938BDEC00DC3604 /* PeoplesViewController.xib in Resources */,
 				0C34CB1F2938BB9800DC3604 /* LaunchScreen.storyboard in Resources */,
 				0C34CB1C2938BB9800DC3604 /* Assets.xcassets in Resources */,
@@ -467,6 +477,8 @@
 				0C34CB782938C27B00DC3604 /* CustomErrorProtocol.swift in Sources */,
 				0C34CB5E2938BDC500DC3604 /* PeoplesInteractor.swift in Sources */,
 				0C34CB152938BB9800DC3604 /* SceneDelegate.swift in Sources */,
+				0C34CB802938C8C400DC3604 /* CustomCellsPeoples.swift in Sources */,
+				0C34CB7C2938C35800DC3604 /* PeoplesServiceApi.swift in Sources */,
 				0C34CB6D2938BE4200DC3604 /* Peoples.swift in Sources */,
 				0C34CB542938BD6A00DC3604 /* BaseProtocol.swift in Sources */,
 			);

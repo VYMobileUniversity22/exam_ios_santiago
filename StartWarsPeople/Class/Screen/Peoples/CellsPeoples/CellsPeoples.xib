@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E5T-NS-c9f" customClass="CustomCellsPeoples" customModule="StartWarsPeople" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pAf-4v-of3">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55M-KM-Fc5">
+                        <rect key="frame" x="0.0" y="0.0" width="87" height="87"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="55M-KM-Fc5" secondAttribute="bottom" id="7CP-n5-w6t"/>
+                    <constraint firstItem="55M-KM-Fc5" firstAttribute="top" secondItem="pAf-4v-of3" secondAttribute="top" id="DOD-bt-Zgh"/>
+                    <constraint firstAttribute="trailing" secondItem="55M-KM-Fc5" secondAttribute="trailing" id="hPa-W2-Z9g"/>
+                    <constraint firstItem="55M-KM-Fc5" firstAttribute="leading" secondItem="pAf-4v-of3" secondAttribute="leading" id="wLw-Zm-86g"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="87" height="87"/>
+            <connections>
+                <outlet property="nameLabel" destination="55M-KM-Fc5" id="g8F-pO-97o"/>
+            </connections>
+            <point key="canvasLocation" x="129.00763358778624" y="-0.35211267605633806"/>
+        </collectionViewCell>
+    </objects>
+</document>
