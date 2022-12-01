@@ -61,6 +61,7 @@
 		0C34CBC329391CFF00DC3604 /* PeoplesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC229391CFF00DC3604 /* PeoplesServiceMock.swift */; };
 		0C34CBC529391D8600DC3604 /* PeoplesServiceApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */; };
 		0C34CBC729391FFE00DC3604 /* PeoplesServiceApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC629391FFE00DC3604 /* PeoplesServiceApiTests.swift */; };
+		0C34CBC92939212500DC3604 /* ApiManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34CBC82939212500DC3604 /* ApiManagerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		0C34CBC229391CFF00DC3604 /* PeoplesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceMock.swift; sourceTree = "<group>"; };
 		0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceApiMock.swift; sourceTree = "<group>"; };
 		0C34CBC629391FFE00DC3604 /* PeoplesServiceApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesServiceApiTests.swift; sourceTree = "<group>"; };
+		0C34CBC82939212500DC3604 /* ApiManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 				0C34CBBC293918D900DC3604 /* PeoplesInteractorMock.swift */,
 				0C34CBC229391CFF00DC3604 /* PeoplesServiceMock.swift */,
 				0C34CBC429391D8600DC3604 /* PeoplesServiceApiMock.swift */,
+				0C34CBC82939212500DC3604 /* ApiManagerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C34CBC129391C5900DC3604 /* PeoplesInteractorTests.swift in Sources */,
+				0C34CBC92939212500DC3604 /* ApiManagerMock.swift in Sources */,
 				0C34CBBD293918D900DC3604 /* PeoplesInteractorMock.swift in Sources */,
 				0C34CBB529390DD200DC3604 /* PeoplesViewMock.swift in Sources */,
 				0C34CBC529391D8600DC3604 /* PeoplesServiceApiMock.swift in Sources */,

@@ -24,6 +24,11 @@ struct PeoplesResponseApi: PeoplesResponse, Codable{
         case results
     }
     
+    init(){
+        count = 0
+        castResults = []
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         count = try container.decode(Int.self, forKey: .count)
